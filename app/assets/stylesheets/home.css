@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+
+}
+footer.page-footer {
+  margin: 0;
+}
+.carousel-indicators {
+  align-content: center;
+}
+body, p, ol, ul, td {
+  // margin-left: 100rem;
+}
+
+a:hover {
+  background: none;
+}
+img.img {
+  border-radius: 0;
+}
+
+figure.col-md-4 {
+  padding: 0;
+  margin: 0;
+  margin-right: 0;
+}
+
+img.img {
+  width: 100%;
+}
+
+a.nav-link {
+  font-size: 1.3rem;
+}
+input.form-control {
+  font-size: 1.3rem;
+}
+a.navbar-brand {
+  font-size: 1.5rem;
+  margin: .2rem;
+  margin-right: .4rem;
+}
+p.flex-item {
+  padding-bottom: 1rem;
+}
+nav.navbar.navbar-dark.navbar-fixed-top.scrolling-navbar {
+  box-shadow: none;
+}
+
+
+.call-to-action {
+  height: 15vh;
+  padding-top: 4rem;
+}
+
+.footer-container {
+  padding-bottom: 2rem;
+
+}
