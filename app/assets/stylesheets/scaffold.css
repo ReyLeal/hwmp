@@ -140,7 +140,7 @@ label {
   background:#08bbe3;
 }
 
-/* Signup Page */
+/* ! Signup Page */
 #signup {
   max-width:500px;
   margin:2em auto;
@@ -159,3 +159,57 @@ label {
 #signup .field input:hover {
   border-bottom:3px solid #ef6da4;
 }
+/* / Signup Page */
+
+
+/* ! Join */
+
+#join .btn {
+    margin: 0 auto;
+    display: block;
+    max-width: 300px;
+}
+
+#join a {
+  color:#1c2331
+}
+
+#join .fa-camera {
+  color:#1c2331;
+  border:5px solid #08bbe3;
+  padding:0.5em;
+  border-radius:100%;
+}
+
+#join p {
+    text-align: center;
+    font-size: 24px;
+}
+
+#join span {
+    color: #08bbe3;
+}
+
+/* / Join */
+
+/* ! Search */
+
+#search .fa-diamond {
+  color:#1c2331;
+  border:5px solid #ec5495;
+  padding:0.5em;
+  border-radius:100%;
+  margin-top:2rem;
+}
+
+#search i {
+  font-size:48px;
+  margin-bottom: 1rem;
+}
+
+#search h2 {
+  color:#08bbe3;
+  font-size:2.5em;
+}
+
+/* / Search */
