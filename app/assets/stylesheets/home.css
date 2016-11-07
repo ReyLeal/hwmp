@@ -69,6 +69,22 @@ img.img {
    margin:1rem;
  }
 
+  #search .polaroid {
+    border:3px solid #262626;
+    padding:1rem;
+    display: inline-block;
+    margin:2em 0 0.5em 0;
+}
+
+  #search .inneroid {
+    background-color:#262626;
+}
+
+
+.inneroid .fa-search {
+  color:#fff!important;
+}
+
 /* Navbar Code */
 .navbar {
   box-shadow: none!important;
@@ -90,6 +106,23 @@ img.img {
 .navbar-brand .fa-diamond {
   margin-right:0.5rem;
   color: #08bbe3;
+}
+
+/* Buttons */
+.btn-pink {
+    background: #ed5495!important;
+}
+
+.btn-pink:hover, .btn-pink:focus {
+    background-color: #dc4787 !important;
+}
+
+.btn-blue {
+    background: #08bce4!important;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+    background-color: #00b0d6!important;
 }
 
 .button-submit {

@@ -2,6 +2,16 @@ Rails.application.routes.draw do
 
   get 'about/index'
 
+  devise_scope :user do
+    get 'signin', to: 'devise/sessions#new'
+  end
+  devise_scope :user do
+    get 'signout', to: 'devise/sessions#destroy'
+  end
+  devise_scope :user do
+    get 'signup', to: 'devise/registrations#new'
+  end
+
   get '/dashboard', to: 'dashboard#index'
   # get '/signup', to: 'registrations#new'
   # get '/signin', to: 'devise/sessions#create'
