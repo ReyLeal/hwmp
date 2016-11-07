@@ -156,6 +156,30 @@ footer.page-footer .footer-copyright {
   box-shadow: none!important;
 }
 
+/* ! Profile About */
+
+
+.left-bio {
+  margin-right:1em;
+}
+.right-bio, .profile-details .fa-envelope {
+  margin-right:0.5rem;
+}
+
+.profile-details .fa-envelope {
+  padding-left:1em;
+  border-left:1px solid #ccc;
+}
+
+.left-bio, .profile-details .fa-link {
+  margin-left:0.5rem;
+}
+
+.profile-details {
+  text-align:center;
+  transform: translateY(-120px);
+}
+
 #profiles-banner {
   height: 50vh;
   min-height:300px;
@@ -174,6 +198,9 @@ footer.page-footer .footer-copyright {
   transform: translateY(-140px);
   border: solid white 10px;
 }
+
+/* / Profile About */
+
 @media screen and (max-width:768px) {
   .lightbox .box {
     width: 50%;
