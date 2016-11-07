@@ -81,11 +81,12 @@
 <div id="carousel-example-1" class="carousel slide carousel-fade" style="background-image:url('<%= @photo.image%>')!important;">
 
 </div>
-<!--/.Slides-->
+<div class="photo-show-profile clearfix">
+  <a href="/profiles/1" class="btn btn-default"><%= "@#{@photo.profile.first_name + @photo.profile.last_name}" %></a>
+</div>
+<div class="photo-show-download clearfix">
+<a href="/profiles/1" class="btn btn-default">Downloads   5</a></div>
 
-<!--Controls-->
-
-<!--/.Controls-->
 </div>
 <!--/.Carousel Wrapper-->
 <!--/.Main layout-->
