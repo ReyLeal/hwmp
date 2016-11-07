@@ -180,6 +180,36 @@ footer.page-footer .footer-copyright {
   transform: translateY(-120px);
 }
 
+.social-bio {
+  font-size:10px;
+  color:#adadad;
+  margin:0 0.5em;
+}
+
+.left-bio, .right-bio {
+  color:#ec5495;
+}
+
+.fa-instagram-square:hover {
+  color:#125688;
+}
+
+.fa-twitter-square:hover {
+  color:#55acee;
+}
+
+.fa-linkedin-square:hover {
+  color:#007bb5;
+}
+
+.profile-image {
+  overflow:hidden;
+}
+
+.profile-image img {
+  width:100%;
+}
+
 #profiles-banner {
   height: 50vh;
   min-height:300px;
@@ -188,7 +218,6 @@ footer.page-footer .footer-copyright {
   background-repeat: no-repeat;
 }
 .profile-image {
-  background-image: url(./hwmp-stock-3.jpg);
   border-radius: 50em;
   height: 15rem;
   width: 15rem;
