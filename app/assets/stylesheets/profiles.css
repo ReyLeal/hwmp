@@ -131,10 +131,10 @@ nav.navbar.navbar-dark.navbar-fixed-top.scrolling-navbar.top-nav-collapse input.
 nav.navbar.navbar-dark.navbar-fixed-top.scrolling-navbar.top-nav-collapse .fa-search {
   color: rgb(28, 35, 49);
 }
-input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search-md]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+/*input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search-md]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
   border-bottom:none!important;
   box-shadow:none!important;
-}
+}*/
 .z-depth-1, .jumbotron, .card, .list-group, .popover, .navbar, .dropdown-menu, .tag, .chip, .pagination .active .page-link, .btn, .pager li a {
   box-shadow: none!important;
 }
@@ -150,10 +150,6 @@ footer.page-footer a{
 }
 footer.page-footer .footer-copyright {
   color: rgb(28, 35, 49)!important;
-}
-
-.z-depth-1, .jumbotron, .card, .list-group, .popover, .navbar, .dropdown-menu, .tag, .chip, .pagination .active .page-link, .btn, .pager li a {
-  box-shadow: none!important;
 }
 
 /* ! Profile About */

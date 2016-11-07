@@ -97,3 +97,60 @@ div.actions {
 label {
   display: block;
 }*/
+
+
+
+#general-banner {
+  height: 30vh;
+  min-height:300px;
+  background-image: url(./hwmp-stock-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#general-banner .general-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 8rem;
+}
+
+.login-sect {
+  text-align:center;
+}
+
+.actions input {
+  margin:1em auto;
+  display:block;
+  border:none;
+  background:#ef6da4;
+  color:#fff;
+  padding:1em 2em;
+
+}
+
+.actions input:hover {
+  background:#08bbe3;
+}
+
+/* Signup Page */
+#signup {
+  max-width:500px;
+  margin:2em auto;
+}
+
+#signup .field input {
+  margin-bottom:1em;
+}
+
+
+#signup .field input:focus {
+  border-bottom:3px solid #08bbe3;
+  box-shadow:none;
+}
+
+#signup .field input:hover {
+  border-bottom:3px solid #ef6da4;
+}
