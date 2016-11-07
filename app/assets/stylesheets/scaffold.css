@@ -99,7 +99,7 @@ label {
 }*/
 
 /* ! Parallax On Sliders */
-.carousel {
+.parallax {
   background-attachment:fixed;
   background-position:center;
 }
@@ -162,35 +162,40 @@ label {
 /* / Signup Page */
 
 
-/* ! Join */
+/* ! browse */
 
-#join .btn {
+#browse i {
+  font-size:48px;
+  margin-bottom: 1rem;
+}
+
+#browse .btn {
     margin: 0 auto;
     display: block;
     max-width: 300px;
 }
 
-#join a {
+#browse a {
   color:#1c2331
 }
 
-#join .fa-camera {
+#browse .fa-camera {
   color:#1c2331;
   border:5px solid #08bbe3;
   padding:0.5em;
   border-radius:100%;
 }
 
-#join p {
+#browse p {
     text-align: center;
     font-size: 24px;
 }
 
-#join span {
+#browse span {
     color: #08bbe3;
 }
 
-/* / Join */
+/* / browse */
 
 /* ! Search */
 
@@ -213,3 +218,25 @@ label {
 }
 
 /* / Search */
+
+/* ! Join */
+#join .fa-users {
+  color:#1c2331;
+  border:5px solid #ed5495;
+  padding:0.5em;
+  border-radius:100%;
+}
+
+#join span {
+    color: #ed5495;
+}
+
+#join p {
+    text-align: center;
+    font-size: 24px;
+}
+
+#join .btn {
+  color:#fff!important;
+}
+/* / Join */
