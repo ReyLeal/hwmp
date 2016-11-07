@@ -1,5 +1,6 @@
 img.img {
   width: 100%;
+  border-radius:0;
 }
 
 /* Lightbox Columns */
@@ -62,14 +63,41 @@ img.img {
    display:block;
  }
 
- .button-submit {
-   background: none;
-   background-color: none;
-   border: none;
+ #search .fa-search {
+   color: #1c2330;
+   font-size:3rem;
+   margin:1rem;
  }
- .fa-search {
-   color: white;
- }
+
+/* Navbar Code */
+.navbar {
+  box-shadow: none!important;
+}
+
+ .navbar.top-nav-collapse{
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1)!important;
+}
+
+
+ .right-navi .nav-item a {
+    padding-top: 6.8px;
+    display: inline-block;
+}
+
+
+
+/* Navbar Logo*/
+.navbar-brand .fa-diamond {
+  margin-right:0.5rem;
+  color: #08bbe3;
+}
+
+.button-submit {
+  background: none;
+  background-color: none;
+  border: none;
+}
+
  input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search-md], input[type=search], textarea.md-textarea {
    border-bottom: none;
  }
@@ -118,10 +146,10 @@ img.img {
    font-weight: 300;
  }
  .top-nav-collapse.navbar-dark .form-inline {
-   border-bottom: 1px solid rgb(28, 35, 49);
+   border-bottom: 1px solid #ccc;
  }
  .top-nav-collapse.navbar-dark .form-inline:hover {
-   border-bottom: 3px solid #4184f3;
+   border-bottom: 3px solid #08bbe3;
  }
  nav.navbar.navbar-dark.navbar-fixed-top.scrolling-navbar.top-nav-collapse .fa-search {
    color: rgb(28, 35, 49);

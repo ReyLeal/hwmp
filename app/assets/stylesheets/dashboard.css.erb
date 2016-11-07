@@ -43,8 +43,13 @@ img.img {
 }
 
 #search .form-control:hover {
-  border-bottom:3px solid #4285f3;
+  border-bottom: 3px solid #ed5495!important;
 }
+
+#search .form-control:focus {
+  border-bottom: 3px solid #08bce4!important;
+}
+
 
  /* About Section*/
  #about {
@@ -62,14 +67,52 @@ img.img {
    display:block;
  }
 
+
+
+ /* Navbar */
+ .navbar {
+   box-shadow:none!important;
+ }
+ .navbar .fa-search {
+  color:#fff!important;
+}
+
+.navbar.top-nav-collapse .fa-search {
+  color: #1c2330!important;
+}
+
+/* Log in / out */
+  .right-navi {
+   float:right;
+   margin-right:2rem;
+ }
+
+/* Slider Content */
+.carousel-item:nth-child(1) {
+    background-image: url(<%= asset_path 'hwmp-stock-3.jpg' %>)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(<%= asset_path 'hwmp-stock-2.jpg' %>)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url(<%= asset_path 'hwmp-stock-1.jpg' %>)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
  .button-submit {
    background: none;
    background-color: none;
    border: none;
  }
- .fa-search {
-   color: white;
- }
+
  input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search-md], input[type=search], textarea.md-textarea {
    border-bottom: none;
  }
