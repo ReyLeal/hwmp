@@ -98,7 +98,12 @@ label {
   display: block;
 }*/
 
-
+/* ! Parallax On Sliders */
+.carousel {
+  background-attachment:fixed;
+  background-position:center;
+}
+/* / Parallax On Sliders */
 
 #general-banner {
   height: 30vh;
