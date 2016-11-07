@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get '/dashboard', to: 'dashboard#index'
+
   resources :likes
   resources :photos
   resources :profiles
