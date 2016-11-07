@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   # get '/signup', to: 'registrations#new'
   # get '/signin', to: 'devise/sessions#create'
   # get '/signout', to: 'devise/sessions#destroy'
+  get '/photos', to: 'photos#index'
   get '/profiles', to: 'profiles#show'
   get '/about', to: 'about#index'
 
