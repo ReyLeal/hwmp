@@ -1,5 +1,6 @@
 img.img {
   width: 100%;
+  border-radius:0;
 }
 
 /* Lightbox Columns */
@@ -26,8 +27,9 @@ img.img {
 }
 
 #join i {
-  font-size:48px;
-  margin-bottom: 1rem;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: #1c2331;
 }
 
  /* Search Section */
@@ -44,6 +46,13 @@ img.img {
 
 #search .form-control:hover {
   border-bottom:3px solid #4285f3;
+}
+
+#search .fa-search {
+  font-size:50px;
+  color:#1c2331;
+  margin-bottom:1rem;
+  margin-top:2rem
 }
 
  /* About Section*/
