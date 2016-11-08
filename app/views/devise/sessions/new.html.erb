@@ -116,7 +116,7 @@
 <!-- Lightbox Gallery -->
 <div class="clearfix">
   <div id="gallery">
-    <% @photos.each do |photo| %>
+    <% Photo.all.limit(8).each do |photo| %>
 
     <div class="gallery-item">
       <a class="example-image-link" href="<%= photo.image.url %>" data-lightbox="example-1">

@@ -67,48 +67,16 @@
 </div>
 
 <!-- Lightbox Gallery -->
-<div class="lightbox clearfix">
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(4).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(4).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(2).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(2).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(3).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(3).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(9).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(9).jpg" alt="" class="img">
-    </a>
-  </div>
-</div>
-<div class="lightbox clearfix">
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(8).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(8).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(6).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(6).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(5).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(5).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(7).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(7).jpg" alt="" class="img">
-    </a>
+<div class="clearfix">
+  <div id="gallery">
+    <% Photo.all.limit(8).each do |photo| %>
+
+    <div class="gallery-item">
+      <a class="example-image-link" href="<%= photo.image.url %>" data-lightbox="example-1">
+        <img class="example-image" src="<%= photo.image.url %>" alt="image-1">
+      </a>
+    </div>
+    <% end %>
   </div>
 </div>
 <!-- Lightbox Gallery -->

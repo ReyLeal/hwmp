@@ -73,26 +73,18 @@
 </div>
 
 
-
 <div class="clearfix">
   <div id="gallery">
-    <% @photos.each do |photo| %>
+    <% Photo.all.limit(8).each do |photo| %>
 
     <div class="gallery-item">
-      <% if user_signed_in? %>
-      <div class="gallery-edit">
-        <div><%= link_to 'Show', photo %></div>
-        <div><%= link_to 'Edit', edit_photo_path(photo) %></div>
-        <div><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-      </div>
-      <% end %>
       <a class="example-image-link" href="<%= photo.image.url %>" data-lightbox="example-1">
         <img class="example-image" src="<%= photo.image.url %>" alt="image-1">
       </a>
     </div>
     <% end %>
-    </div>
   </div>
+</div>
 
 
 <!--Footer-->
