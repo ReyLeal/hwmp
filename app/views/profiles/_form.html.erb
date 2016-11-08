@@ -45,15 +45,13 @@
     <%= f.label :bio %>
     <%= f.text_area :bio %>
   </div>
-  
-  <% if @user.nil? %>
-    <div class="field">
-      <%= f.label :user_id %><br>
-      <%= f.text_field :user_id %>
-    </div>
-  <% else %>
-    <%= f.hidden_field :user_id, value: @user.id %>
-  <% end %>
+
+
+  <%= f.file_field :avatar %>
+
+  <%= f.file_field :background %>
+
+  <%= f.hidden_field :user_id, value: @user.id %>
 
   <div class="actions">
     <%= f.submit %>
