@@ -67,6 +67,29 @@
 
 <p id="notice"><%= notice %></p>
 
+<div id="about" class="clearfix">
+    <div class="img col-md-4"><%= image_tag('hwmp-camera.png') %>
+        <h2>Photos</h2>
+    </div>
+    <div class="img col-md-4"><%= image_tag('hwmp-heart-p.png') %>
+        <h2>With Love</h2>
+    </div>
+    <div class="img col-md-4"><%= image_tag('hwmp-palms.png') %>
+        <h2>From Miami</h2>
+    </div>
+
+
+
+</div>
+
+  <% if user_signed_in? %>
+<a target="_blank" href="/photos/new" class="btn btn-pink btn-lg flex-item photo-btn">Add a Photo</a>
+
+  <% else %>
+
+  <a target="_blank" href="/signup" class="btn btn-pink btn-lg flex-item photo-btn">Sign Up</a>
+
+  <% end %>
 
 
 <div class="clearfix">
@@ -74,11 +97,13 @@
     <% @photos.each do |photo| %>
 
     <div class="gallery-item">
+      <% if user_signed_in? %>
       <div class="gallery-edit">
         <div><%= link_to 'Show', photo %></div>
         <div><%= link_to 'Edit', edit_photo_path(photo) %></div>
         <div><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></div>
       </div>
+      <% end %>
       <a class="example-image-link" href="<%= photo.image.url %>" data-lightbox="example-1">
         <img class="example-image" src="<%= photo.image.url %>" alt="image-1">
       </a>
@@ -86,27 +111,10 @@
     <% end %>
     </div>
   </div>
-<br>
-
-<%= link_to 'New Photo', new_photo_path %>
 
 
 
 <footer class="page-footer center-on-small-only">
-
-  <div class="call-to-action clearfix" id="join">
-<div class="col-md-12">
-  <i class="fa fa-users" aria-hidden="true"></i>
-  <p>
-      <span>Add your photo and contribute!
-      </span><br>
-      <a href="/about">This project is an open invitation to all photographers in Miami!</a>
-  </p>
-  <div class="cta-btns">
-      <a target="_blank" href="/signup" class="btn btn-pink btn-lg flex-item">Sign Up</a>
-  </div>
-</div>
-</div>
 
     <!--Footer Links-->
     <div class="container-fluid">
