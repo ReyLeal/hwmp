@@ -377,3 +377,7 @@ label {
   max-width:300px;
   color:#696969;
 }
+
+#carousel-example-1 {
+  background-size:cover!important;
+}
