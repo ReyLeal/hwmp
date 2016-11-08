@@ -21,6 +21,11 @@
     <%= f.text_field :last_name %>
   </div>
 
+  <div class="profile-new-avatar">
+    <%= f.label :avatar %><br/>
+    <%= f.file_field :avatar %>
+  </div>
+
   <div class="field">
     <%= f.label :website %>
     <%= f.text_field :website %>
@@ -47,9 +52,10 @@
   </div>
 
 
-  <%= f.file_field :avatar %>
-
+<div class="profile-new-background">
+  <%= f.label :background %><br/>
   <%= f.file_field :background %>
+</div>
 
   <%= f.hidden_field :user_id, value: @user.id %>
 

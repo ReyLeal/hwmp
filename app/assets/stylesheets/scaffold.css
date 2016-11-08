@@ -381,3 +381,18 @@ label {
 #carousel-example-1 {
   background-size:cover!important;
 }
+
+.profile-new-avatar, .profile-new-background {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-new-avatar:hover, .profile-new-background:hover, #profile_bio:hover {
+    padding-bottom: 1em;
+    border-bottom: 3px solid #ec5495;
+}
+
+#profile_bio:focus {
+  border-bottom: 3px solid #14bee4;
+  outline: none;
+}
