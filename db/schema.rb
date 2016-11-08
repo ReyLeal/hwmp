@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161107041510) do
+ActiveRecord::Schema.define(version: 20161108035447) do
 
   create_table "likes", force: :cascade do |t|
     t.integer  "counter"
@@ -24,8 +24,12 @@ ActiveRecord::Schema.define(version: 20161107041510) do
     t.string   "name"
     t.string   "image"
     t.integer  "profile_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
     t.index ["profile_id"], name: "index_photos_on_profile_id"
   end
 

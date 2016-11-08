@@ -65,6 +65,7 @@
 </div>
 <div id="photo-new">
 
+  <%= image_tag @photo.image.url(:medium) %>
   <%= render 'form', photo: @photo %>
 
   <%= link_to 'Show', @photo %> |

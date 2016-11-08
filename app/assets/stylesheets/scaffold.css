@@ -327,13 +327,38 @@ label {
 /* / Profile new Page */
 
 /* ! Lightbox Code */
-.example-image-link {
+/*.example-image-link {
   width:25%;
   display:inline-block;
   float:left;
-}
+}*/
 
 .example-image {
   width:100%;
+  border-radius: 0;
 }
 /* / Lightbox Code */
+
+.gallery-item {
+  width:25%;
+  float:left;
+  overflow: hidden;
+  max-height: 220px;
+}
+
+.gallery-edit>div {
+  display:inline-block;
+  margin-left:10px;
+}
+
+.gallery-edit a {
+  color:#fff;
+}
+
+.gallery-edit a:hover {
+  color:rgb(197, 197, 197);
+}
+
+.gallery-edit {
+  transform:translateY(30px);
+}
