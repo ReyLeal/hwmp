@@ -25,6 +25,8 @@ require 'profiles_controller'
 
   # GET /profiles/1/edit
   def edit
+      @user = current_user
+      @profiles = Profile.all
   end
 
   # POST /profiles
