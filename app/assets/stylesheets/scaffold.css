@@ -122,6 +122,24 @@ label {
     padding-top: 8rem;
 }
 
+#general-banner-7 {
+  height: 30vh;
+  min-height:300px;
+  background-image: url(./hwmp-stock-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#general-banner-7 .general-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 8rem;
+}
+
 .login-sect {
   text-align:center;
 }
@@ -240,3 +258,24 @@ label {
   color:#fff!important;
 }
 /* / Join */
+
+/* ! Photo new Page */
+#photo-new {
+  max-width:500px;
+  margin:2em auto;
+}
+
+#photo-new .field input {
+  margin-bottom:1em;
+}
+
+
+#photo-new .field input:focus {
+  border-bottom:3px solid #08bbe3;
+  box-shadow:none;
+}
+
+#photo-new .field input:hover {
+  border-bottom:3px solid #ef6da4;
+}
+/* / Photo new Page */
