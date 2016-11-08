@@ -1,4 +1,4 @@
-<!--
+
 
 
 <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
@@ -27,11 +27,6 @@
         <li class="nav-item">
           <a class="nav-link" href="/about/">About</a>
         </li>
-        <%if user_signed_in? %>
-        <li class="nav-item">
-          <a class="nav-link" href="/profiles/<%= current_user.id%>">Profile</a>
-        </li>
-        <% end %>
       </ul>
 
 
@@ -73,6 +68,7 @@
   <%= image_tag @photo.image.url(:medium) %>
   <%= render 'form', photo: @photo %>
 
+  <%= link_to 'Show', @photo %> |
 
 </div>
 
@@ -91,7 +87,6 @@
 </div>
 
 
-<!--Footer-->
 <% if user_signed_in? %>
 <footer class="page-footer center-on-small-only">
 
@@ -151,4 +146,4 @@
     <!--/.Copyright-->
 
   </footer>
-  <!--/.Footer--> -->
+  <!--/.Footer-->
