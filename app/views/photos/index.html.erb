@@ -83,11 +83,11 @@
 </div>
 
   <% if user_signed_in? %>
-<a target="_blank" href="/photos/new" class="btn btn-pink btn-lg flex-item photo-btn">Add a Photo</a>
+<a  href="/photos/new" class="btn btn-pink btn-lg flex-item photo-btn">Add a Photo</a>
 
   <% else %>
 
-  <a target="_blank" href="/signup" class="btn btn-pink btn-lg flex-item photo-btn">Sign Up</a>
+  <a  href="/signup" class="btn btn-pink btn-lg flex-item photo-btn">Sign Up</a>
 
   <% end %>
 
@@ -100,7 +100,7 @@
       <div class="gallery-edit">
         <div><%= link_to 'Show', photo %></div>
       </div>
-    
+
       <a class="example-image-link" href="<%= photo.image.url %>" data-lightbox="example-1">
         <img class="example-image" src="<%= photo.image.url %>" alt="image-1">
       </a>
