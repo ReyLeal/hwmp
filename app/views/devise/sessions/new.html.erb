@@ -1,26 +1,26 @@
 <!-- <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+<div class="field">
+<%= f.label :email %><br />
+<%= f.email_field :email, autofocus: true %>
+</div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+<div class="field">
+<%= f.label :password %><br />
+<%= f.password_field :password, autocomplete: "off" %>
+</div>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
+<% if devise_mapping.rememberable? -%>
+<div class="field">
+<%= f.check_box :remember_me %>
+<%= f.label :remember_me %>
+</div>
+<% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+<div class="actions">
+<%= f.submit "Log in" %>
+</div>
 <% end %> -->
 
 <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
@@ -58,21 +58,21 @@
       </form>
 
       <div class="right-navi">
-       <ul class="nav navbar-nav">
-         <% if user_signed_in? %>
-           <li class="nav-item">
-           <%= link_to "Logout", destroy_user_session_path, :method => :delete, :data => { :no_turbolink => true }, :class => 'nav-link' %>
-           </li>
-         <% else %>
-           <li class="nav-item">
-             <a class="nav-link" href="/signin">Log In</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="/signup">Sign Up</a>
-           </li>
-           <% end %>
-         </ul>
-       </div>
+        <ul class="nav navbar-nav">
+          <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to "Logout", destroy_user_session_path, :method => :delete, :data => { :no_turbolink => true }, :class => 'nav-link' %>
+          </li>
+          <% else %>
+          <li class="nav-item">
+            <a class="nav-link" href="/signin">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signup">Sign Up</a>
+          </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
     <!--/.Collapse content-->
 
@@ -83,79 +83,47 @@
 
 <!--Carousel Wrapper-->
 <div id="general-banner" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-<h1 class="general-heading">Log In</h1>
+  <h1 class="general-heading">Log In</h1>
 </div>
 <div id="signup">
 
   <h2>Log in</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
-    </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
 
-    <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
-    </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
 
-    <% if devise_mapping.rememberable? -%>
-      <div class="field">
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember_me %>
-      </div>
-    <% end -%>
+  <% if devise_mapping.rememberable? -%>
+  <div class="field">
+    <%= f.check_box :remember_me %>
+    <%= f.label :remember_me %>
+  </div>
+  <% end -%>
 
-    <div class="actions">
-      <%= f.submit "Log in" %>
-    </div>
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
   <% end %>
 </div>
 
 <!-- Lightbox Gallery -->
-<div class="lightbox clearfix">
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(4).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(4).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(2).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(2).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(3).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(3).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(9).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(9).jpg" alt="" class="img">
-    </a>
-  </div>
-</div>
-<div class="lightbox clearfix">
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(8).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(8).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(6).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(6).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(5).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(5).jpg" alt="" class="img">
-    </a>
-  </div>
-  <div class="box">
-    <a href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(7).jpg">
-      <img src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(7).jpg" alt="" class="img">
-    </a>
+<div class="clearfix">
+  <div id="gallery">
+    <% @photos.each do |photo| %>
+
+    <div class="gallery-item">
+      <a class="example-image-link" href="<%= photo.image.url %>" data-lightbox="example-1">
+        <img class="example-image" src="<%= photo.image.url %>" alt="image-1">
+      </a>
+    </div>
+    <% end %>
   </div>
 </div>
 <!-- Lightbox Gallery -->
@@ -164,39 +132,39 @@
 <footer class="page-footer center-on-small-only">
 
   <div class="call-to-action clearfix" id="join">
-<div class="col-md-12">
-  <i class="fa fa-users" aria-hidden="true"></i>
-  <p>
-      <span>Add your photo and contribute!
-      </span><br>
-      <a href="/about">This project is an open invitation to all photographers in Miami!</a>
-  </p>
-  <div class="cta-btns">
-      <a target="_blank" href="/signup" class="btn btn-pink btn-lg flex-item">Sign Up</a>
+    <div class="col-md-12">
+      <i class="fa fa-users" aria-hidden="true"></i>
+      <p>
+        <span>Add your photo and contribute!
+        </span><br>
+        <a href="/about">This project is an open invitation to all photographers in Miami!</a>
+      </p>
+      <div class="cta-btns">
+        <a target="_blank" href="/signup" class="btn btn-pink btn-lg flex-item">Sign Up</a>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
-    <!--Footer Links-->
+  <!--Footer Links-->
+  <div class="container-fluid">
+    <div class="row">
+
+      <!--FOOTER ************************************************************************************************************************-->
+
+    </div>
+  </div>
+  <!--/.Footer Links-->
+
+  <!--Copyright-->
+  <div class="footer-copyright">
     <div class="container-fluid">
-        <div class="row">
+      © 2015 Copyright:
+      <a href="http://www.helloworldmiami.com">
+        hwmp.com
+      </a>
 
-            <!--FOOTER ************************************************************************************************************************-->
-
-        </div>
     </div>
-    <!--/.Footer Links-->
-
-    <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2015 Copyright:
-            <a href="http://www.helloworldmiami.com">
-                hwmp.com
-            </a>
-
-        </div>
-    </div>
-    <!--/.Copyright-->
+  </div>
+  <!--/.Copyright-->
 
 </footer>
