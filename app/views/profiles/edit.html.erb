@@ -77,17 +77,18 @@
 </div>
 
 
-<div id="gallery" class="clearfix">
-  <a class="example-image-link" href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(4).jpg" data-lightbox="example-1"><img class="example-image" src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(4).jpg" alt="image-1" /></a>
-  <a class="example-image-link" href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(2).jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(2).jpg" alt="image-1"/></a>
-  <a class="example-image-link" href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(3).jpg" data-lightbox="example-1"><img class="example-image" src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(3).jpg" alt="image-1" /></a>
-  <a class="example-image-link" href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(5).jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(5).jpg" alt="image-1"/></a>
-  <a class="example-image-link" href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(4).jpg" data-lightbox="example-1"><img class="example-image" src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(4).jpg" alt="image-1" /></a>
-  <a class="example-image-link" href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(2).jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(2).jpg" alt="image-1"/></a>
-  <a class="example-image-link" href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(3).jpg" data-lightbox="example-1"><img class="example-image" src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(3).jpg" alt="image-1" /></a>
-  <a class="example-image-link" href="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(5).jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="http://mdbootstrap.com/images/docs/lightbox-thumbs/img%20(5).jpg" alt="image-1"/></a>
-</div>
+<div class="clearfix">
+  <div id="gallery">
+    <% Photo.all.limit(8).each do |photo| %>
 
+    <div class="gallery-item">
+      <a class="example-image-link" href="<%= photo.image.url %>" data-lightbox="example-1">
+        <img class="example-image" src="<%= photo.image.url %>" alt="image-1">
+      </a>
+    </div>
+    <% end %>
+  </div>
+</div>
 <!-- Lightbox Gallery -->
 <!-- <div class="lightbox clearfix">
   <div class="box">
