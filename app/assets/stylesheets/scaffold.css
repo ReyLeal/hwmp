@@ -106,7 +106,7 @@ label {
 /* / Parallax On Sliders */
 
 #general-banner {
-  height: 30vh;
+  height: 40vh;
   min-height:300px;
   background-image: url(./hwmp-stock-3.jpg);
   background-size: cover;
@@ -122,8 +122,26 @@ label {
     padding-top: 8rem;
 }
 
+#general-banner-4 {
+  height: 40vh;
+  min-height:300px;
+  background-image: url(./hwmp-stock-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#general-banner-4 .general-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 8rem;
+}
+
 #general-banner-7 {
-  height: 30vh;
+  height: 40vh;
   min-height:300px;
   background-image: url(./hwmp-stock-5.jpg);
   background-size: cover;
@@ -279,3 +297,31 @@ label {
   border-bottom:3px solid #ef6da4;
 }
 /* / Photo new Page */
+
+/* ! Profile new Page */
+#profile-new {
+  max-width:500px;
+  margin:2em auto;
+}
+
+#profile-new .field input {
+  margin-bottom:1em;
+}
+
+
+#profile-new .field input:focus {
+  border-bottom:3px solid #08bbe3;
+  box-shadow:none;
+}
+
+#profile-new .field input:hover {
+  border-bottom:3px solid #ef6da4;
+}
+
+#profile_bio {
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  border-color:#ccc;
+}
+/* / Profile new Page */

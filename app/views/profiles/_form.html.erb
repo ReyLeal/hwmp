@@ -32,11 +32,6 @@
   </div>
 
   <div class="field">
-    <%= f.label :bio %>
-    <%= f.text_area :bio %>
-  </div>
-
-  <div class="field">
     <%= f.label :instagram %>
     <%= f.text_field :instagram %>
   </div>
@@ -46,6 +41,11 @@
     <%= f.text_field :twitter %>
   </div>
 
+  <div class="field">
+    <%= f.label :bio %>
+    <%= f.text_area :bio %>
+  </div>
+  
   <% if @user.nil? %>
     <div class="field">
       <%= f.label :user_id %><br>
