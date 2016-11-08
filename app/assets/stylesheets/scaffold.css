@@ -368,3 +368,12 @@ label {
   margin: 0 auto 3em auto!important;
   display: table!important;
 }
+
+#notice {
+  text-align:center;
+  padding:2em;
+  border:3px solid #08bbe3;
+  margin:1em auto;
+  max-width:300px;
+  color:#696969;
+}
