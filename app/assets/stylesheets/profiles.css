@@ -221,7 +221,10 @@ footer.page-footer .footer-copyright {
   transform: translateY(-140px);
   border: solid white 10px;
 }
-
+.profile-details .bio {
+  max-width: 30rem;
+  margin: 0 auto;
+}
 /* / Profile About */
 
 @media screen and (max-width:768px) {
