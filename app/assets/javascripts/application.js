@@ -17,4 +17,5 @@
 //= require bootstrap
 //= require mdb
 //= require tether
-//= require jquery-2.2.3
+//= require lightbox
+//= lightbox-plus-jquery

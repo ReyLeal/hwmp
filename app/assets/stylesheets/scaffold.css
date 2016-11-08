@@ -325,3 +325,15 @@ label {
   border-color:#ccc;
 }
 /* / Profile new Page */
+
+/* ! Lightbox Code */
+.example-image-link {
+  width:25%;
+  display:inline-block;
+  float:left;
+}
+
+.example-image {
+  width:100%;
+}
+/* / Lightbox Code */
