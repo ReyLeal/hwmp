@@ -1,4 +1,4 @@
-
+<!--
 <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
 
   <!-- Collapse button-->
@@ -34,21 +34,21 @@
       </form>
 
       <div class="right-navi">
-       <ul class="nav navbar-nav">
-         <% if user_signed_in? %>
-           <li class="nav-item">
-           <%= link_to "Logout", destroy_user_session_path, :method => :delete, :data => { :no_turbolink => true }, :class => 'nav-link' %>
-           </li>
-         <% else %>
-           <li class="nav-item">
-             <a class="nav-link" href="/signin">Log In</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="/signup">Sign Up</a>
-           </li>
-           <% end %>
-         </ul>
-       </div>
+        <ul class="nav navbar-nav">
+          <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to "Logout", destroy_user_session_path, :method => :delete, :data => { :no_turbolink => true }, :class => 'nav-link' %>
+          </li>
+          <% else %>
+          <li class="nav-item">
+            <a class="nav-link" href="/signin">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signup">Sign Up</a>
+          </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
     <!--/.Collapse content-->
 
@@ -59,7 +59,7 @@
 
 <!--Carousel Wrapper-->
 <div id="general-banner" class="parallax carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-<h1 class="general-heading">Photos</h1>
+  <h1 class="general-heading">Photos</h1>
 </div>
 
 
@@ -68,28 +68,28 @@
 <!-- <p id="notice"><%= notice %></p> -->
 
 <div id="about" class="clearfix">
-    <div class="img col-md-4"><%= image_tag('hwmp-camera.png') %>
-        <h2>Photos</h2>
-    </div>
-    <div class="img col-md-4"><%= image_tag('hwmp-heart-p.png') %>
-        <h2>With Love</h2>
-    </div>
-    <div class="img col-md-4"><%= image_tag('hwmp-palms.png') %>
-        <h2>From Miami</h2>
-    </div>
+  <div class="img col-md-4"><%= image_tag('hwmp-camera.png') %>
+    <h2>Photos</h2>
+  </div>
+  <div class="img col-md-4"><%= image_tag('hwmp-heart-p.png') %>
+    <h2>With Love</h2>
+  </div>
+  <div class="img col-md-4"><%= image_tag('hwmp-palms.png') %>
+    <h2>From Miami</h2>
+  </div>
 
 
 
 </div>
 
-  <% if user_signed_in? %>
+<% if user_signed_in? %>
 <a  href="/photos/new" class="btn btn-pink btn-lg flex-item photo-btn">Add a Photo</a>
 
-  <% else %>
+<% else %>
 
-  <a  href="/signup" class="btn btn-pink btn-lg flex-item photo-btn">Sign Up</a>
+<a  href="/signup" class="btn btn-pink btn-lg flex-item photo-btn">Sign Up</a>
 
-  <% end %>
+<% end %>
 
 
 <div class="clearfix">
@@ -106,34 +106,65 @@
       </a>
     </div>
     <% end %>
-    </div>
   </div>
+</div>
 
 
-
+<% if user_signed_in? %>
 <footer class="page-footer center-on-small-only">
 
+  <div class="call-to-action clearfix" id="join">
+    <div class="col-md-12">
+      <i class="fa fa-users" aria-hidden="true"></i>
+
+      <p>
+        <span>Add your photo and contribute!
+        </span><br>
+        <a href="/about">This project is an open invitation to all photographers in Miami!</a>
+      </p>
+
+    </div>
+  </div>
+  <% else %>
+  <footer class="page-footer center-on-small-only">
+
+    <div class="call-to-action clearfix" id="join">
+      <div class="col-md-12">
+        <i class="fa fa-users" aria-hidden="true"></i>
+
+        <p>
+          <span>Add your photo and contribute!
+          </span><br>
+          <a href="/about">This project is an open invitation to all photographers in Miami!</a>
+        </p>
+        <div class="cta-btns">
+          <a  href="/signup" class="btn btn-pink btn-lg flex-item">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <% end %>
     <!--Footer Links-->
     <div class="container-fluid">
-        <div class="row">
+      <div class="row">
 
-            <!--FOOTER ************************************************************************************************************************-->
+        <!--FOOTER ************************************************************************************************************************-->
 
-        </div>
+      </div>
     </div>
     <!--/.Footer Links-->
 
     <!--Copyright-->
     <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2015 Copyright:
-            <a href="http://www.helloworldmiami.com">
-                hwmp.com
-            </a>
+      <div class="container-fluid">
+        © 2015 Copyright:
+        <a href="http://www.helloworldmiami.com">
+          hwmp.com
+        </a>
 
-        </div>
+      </div>
     </div>
     <!--/.Copyright-->
 
-</footer>
-<!--/.Footer-->
+  </footer>
+  <!--/.Footer--> -->

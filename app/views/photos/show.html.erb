@@ -1,4 +1,4 @@
-<!-- <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
 <p>
 <strong>Name:</strong>
@@ -124,42 +124,63 @@
 <!-- Lightbox Gallery -->
 
 <!--Footer-->
+<% if user_signed_in? %>
 <footer class="page-footer center-on-small-only">
 
   <div class="call-to-action clearfix" id="join">
-<div class="col-md-12">
-  <i class="fa fa-users" aria-hidden="true"></i>
-  <p>
-      <span>Add your photo and contribute!
-      </span><br>
-      <a href="/about">This project is an open invitation to all photographers in Miami!</a>
-  </p>
-  <div class="cta-btns">
-      <a  href="/signup" class="btn btn-pink btn-lg flex-item">Sign Up</a>
-  </div>
-</div>
-</div>
+    <div class="col-md-12">
+      <i class="fa fa-users" aria-hidden="true"></i>
 
+      <p>
+        <span>Add your photo and contribute!
+        </span><br>
+        <a href="/about">This project is an open invitation to all photographers in Miami!</a>
+      </p>
+      <div class="cta-btns">
+        <a  href="/photos/new" class="btn btn-pink btn-lg flex-item">Add A Photo</a>
+      </div>
+    </div>
+  </div>
+  <% else %>
+  <footer class="page-footer center-on-small-only">
+
+    <div class="call-to-action clearfix" id="join">
+      <div class="col-md-12">
+        <i class="fa fa-users" aria-hidden="true"></i>
+
+        <p>
+          <span>Add your photo and contribute!
+          </span><br>
+          <a href="/about">This project is an open invitation to all photographers in Miami!</a>
+        </p>
+        <div class="cta-btns">
+          <a  href="/signup" class="btn btn-pink btn-lg flex-item">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <% end %>
     <!--Footer Links-->
     <div class="container-fluid">
-        <div class="row">
+      <div class="row">
 
-            <!--FOOTER ************************************************************************************************************************-->
+        <!--FOOTER ************************************************************************************************************************-->
 
-        </div>
+      </div>
     </div>
     <!--/.Footer Links-->
 
     <!--Copyright-->
     <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2015 Copyright:
-            <a href="http://www.helloworldmiami.com">
-                hwmp.com
-            </a>
+      <div class="container-fluid">
+        © 2015 Copyright:
+        <a href="http://www.helloworldmiami.com">
+          hwmp.com
+        </a>
 
-        </div>
+      </div>
     </div>
     <!--/.Copyright-->
 
-</footer>
+  </footer>
+  <!--/.Footer
