@@ -1,11 +1,14 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
-
+require 'profiles_controller'
   # GET /profiles
   # GET /profiles.json
   def index
     @user = current_user
     @profiles = Profile.all
+    @photos = Photos.all
+    @photos = Photo.all.limit(8).offset(8)
+
   end
 
   # GET /profiles/1

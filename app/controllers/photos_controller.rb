@@ -4,12 +4,13 @@ class PhotosController < ApplicationController
   # GET /photos
   # GET /photos.json
   def index
-    @photos = Photo.all.limit 8
+    @photos = Photo.all
   end
 
   # GET /photos/1
   # GET /photos/1.json
   def show
+    @photos = Photo.all.limit(8)
   end
 
   # GET /photos/new
