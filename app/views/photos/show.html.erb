@@ -45,11 +45,6 @@
         <li class="nav-item">
           <a class="nav-link" href="/about/">About</a>
         </li>
-        <%if user_signed_in? %>
-        <li class="nav-item">
-          <a class="nav-link" href="/profiles/<%= current_user.id%>">Profile</a>
-        </li>
-        <% end %>
       </ul>
 
 
@@ -86,14 +81,20 @@
 <div id="carousel-example-1" class="carousel slide carousel-fade" style="background-image:url('<%= @photo.image%>')!important;">
 
 </div>
-<div class="clearfix media-under-photoshow">
-  <div class="photo-show-profile">
-    <a href="/profiles/<%=@photo.profile.id%>" class="btn btn-default"><%= "@#{@photo.profile.first_name + @photo.profile.last_name}" %></a>
-  </div>
-  <div class="photo-show-download ">
-    <a href="/profiles/1" class="btn btn-default">Downloads&nbsp; 5</a></div>
+<div class="dwnl-btns">
+    <a target="_blank" href="<%= @photo.image%>" class="btn btn-pink btn-lg flex-item">Download Image</a>
+</div>
+<div class="dwnl-profile">
+<h2>Meet the photographer</h2>
+  <a href="/profiles/<%= @photo.profile.id %>" />
+    <img src="<%= @photo.profile.avatar %>" alt="">
+  </a>
+  <h2><%= "#{@photo.profile.first_name + " " + @photo.profile.last_name}"%></h2>
+  <p><%= @photo.profile.bio %></p>
+  <a class="social-bio" href="https://www.instagram.com/<%=@photo.profile.instagram%>"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+  <a class="social-bio" href="https://www.twitter.com/<%=@photo.profile.twitter%>"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+  <a class="social-bio" href="https://www.linkedin.com/<%=@photo.profile.instagram%>"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
 
-  </div>
 </div>
 <!--/.Carousel Wrapper-->
 <!--/.Main layout-->
@@ -129,64 +130,42 @@
 <!-- Lightbox Gallery -->
 
 <!--Footer-->
-<!--Footer-->
-<% if user_signed_in? %>
 <footer class="page-footer center-on-small-only">
 
   <div class="call-to-action clearfix" id="join">
-    <div class="col-md-12">
-      <i class="fa fa-users" aria-hidden="true"></i>
-
-      <p>
-        <span>Add your photo and contribute!
-        </span><br>
-        <a href="/about">This project is an open invitation to all photographers in Miami!</a>
-      </p>
-      <div class="cta-btns">
-        <a  href="/photos/new" class="btn btn-pink btn-lg flex-item">Add A Photo</a>
-      </div>
-    </div>
+<div class="col-md-12">
+  <i class="fa fa-users" aria-hidden="true"></i>
+  <p>
+      <span>Add your photo and contribute!
+      </span><br>
+      <a href="/about">This project is an open invitation to all photographers in Miami!</a>
+  </p>
+  <div class="cta-btns">
+      <a target="_blank" href="/signup" class="btn btn-pink btn-lg flex-item">Sign Up</a>
   </div>
-  <% else %>
-  <footer class="page-footer center-on-small-only">
+</div>
+</div>
 
-    <div class="call-to-action clearfix" id="join">
-      <div class="col-md-12">
-        <i class="fa fa-users" aria-hidden="true"></i>
-
-        <p>
-          <span>Add your photo and contribute!
-          </span><br>
-          <a href="/about">This project is an open invitation to all photographers in Miami!</a>
-        </p>
-        <div class="cta-btns">
-          <a  href="/signup" class="btn btn-pink btn-lg flex-item">Sign Up</a>
-        </div>
-      </div>
-    </div>
-
-    <% end %>
     <!--Footer Links-->
     <div class="container-fluid">
-      <div class="row">
+        <div class="row">
 
-        <!--FOOTER ************************************************************************************************************************-->
+            <!--FOOTER ************************************************************************************************************************-->
 
-      </div>
+        </div>
     </div>
     <!--/.Footer Links-->
 
     <!--Copyright-->
     <div class="footer-copyright">
-      <div class="container-fluid">
-        © 2015 Copyright:
-        <a href="http://www.helloworldmiami.com">
-          hwmp.com
-        </a>
+        <div class="container-fluid">
+            © 2015 Copyright:
+            <a href="http://www.helloworldmiami.com">
+                hwmp.com
+            </a>
 
-      </div>
+        </div>
     </div>
     <!--/.Copyright-->
 
-  </footer>
-  <!--/.Footer-->
+</footer>

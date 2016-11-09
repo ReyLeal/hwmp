@@ -396,3 +396,56 @@ label {
   border-bottom: 3px solid #14bee4;
   outline: none;
 }
+
+#wynfam-banner .general-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 8rem;
+}
+
+#wynfam-banner {
+  height: 100vh;
+  min-height:300px;
+  background-image: url(./hwmp-wynfam.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom!important;
+  background-attachment:fixed;
+}
+
+#browse, #join {
+  margin: 2em auto;
+  padding:0;
+}
+
+.dwnl-btns a {
+  margin:0 auto;
+  display:table;
+  margin-top:3em;
+  min-width: 400px;
+}
+
+.dwnl-profile img {
+  border-radius:100%;
+  max-width:150px;
+  margin:2em auto;
+  display:block;
+}
+
+.dwnl-profile {
+  text-align:center;
+  max-width:400px;
+  margin:3em auto;
+  padding-bottom:2em;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+
+.dwnl-profile h2:first-child {
+  text-align:center;
+  margin-top:1em;
+  color:#20c1e6;
+}
