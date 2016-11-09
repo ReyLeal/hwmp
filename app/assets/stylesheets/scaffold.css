@@ -465,3 +465,16 @@ label {
   border-radius:100%;
   border:3px solid #18bfe5;
 }
+
+.wyncode img {
+  margin:0 auto;
+  display:block;
+  width:150px;
+  padding:20px;
+  border:5px solid #52cfeb;
+  border-radius:100%;
+}
+
+.wyncode {
+  margin-top:2em;
+}
