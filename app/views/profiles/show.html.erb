@@ -151,7 +151,7 @@
   <%= image_tag(@profile.avatar) %>
 </div>
 <div class="profile-details clearfix"><h2><%= @profile.first_name %> <%=@profile.last_name%> </h2><p class="bio"><%= @profile.bio%> </p>
-<p>  <i class="fa fa-link" aria-hidden="true"></i><a class="left-bio" href="<%=@profile.website%>"><%=@profile.website%></a><i class="fa fa-envelope" aria-hidden="true"></i><a class="right-bio" href="<%=@profile.email%>"><%=@profile.email%></a>
+<p>  <i class="fa fa-link" aria-hidden="true"></i><a class="left-bio" href="<%=@profile.website%>"><%=@profile.website%></a><i class="fa fa-envelope" aria-hidden="true"></i><a class="right-bio" href="#"><%=@profile.email%></a>
 </p>
 <a class="social-bio" href="https://www.instagram.com/<%=@profile.instagram%>"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
 <a class="social-bio" href="https://www.twitter.com/<%=@profile.twitter%>"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
