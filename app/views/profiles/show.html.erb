@@ -156,10 +156,12 @@
 <a class="social-bio" href="https://www.instagram.com/<%=@profile.instagram%>"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
 <a class="social-bio" href="https://www.twitter.com/<%=@profile.twitter%>"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
 <a class="social-bio" href="https://www.linkedin.com/<%=@profile.instagram%>"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+<%if user_signed_in? %>
 <div class="cta-btns profile-buttons">
     <a href="/photos/new" class="btn btn-pink btn-lg flex-item">Upload Photos</a>
-    <a href="/profiles/<%=@profile.id%>/edit" class="btn btn-pink btn-lg flex-item">Edit Profile</a>
+    <a href="/profiles/<%=@profile.id%>/edit" class="btn btn-blue btn-lg flex-item">Edit Profile</a>
 </div>
+<% end %>
 
 </div>
 
