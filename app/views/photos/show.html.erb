@@ -88,7 +88,7 @@
 </div>
 <div class="clearfix media-under-photoshow">
   <div class="photo-show-profile">
-    <a href="/profiles/1" class="btn btn-default"><%= "@#{@photo.profile.first_name + @photo.profile.last_name}" %></a>
+    <a href="/profiles/<%=@photo.profile.id%>" class="btn btn-default"><%= "@#{@photo.profile.first_name + @photo.profile.last_name}" %></a>
   </div>
   <div class="photo-show-download ">
     <a href="/profiles/1" class="btn btn-default">Downloads&nbsp; 5</a></div>
