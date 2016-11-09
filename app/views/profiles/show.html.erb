@@ -177,8 +177,10 @@
       <% if user_signed_in? %>
       <div class="gallery-edit">
         <div><%= link_to 'Show', photo %></div>
+        <% if @profile.user.id == current_user.id %>
         <div><%= link_to 'Edit', edit_photo_path(photo) %></div>
         <div><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <% end %>
       </div>
       <% end %>
       <a class="example-image-link" href="<%= photo.image.url %>" data-lightbox="example-1">
