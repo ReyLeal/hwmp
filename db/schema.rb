@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161108222355) do
+ActiveRecord::Schema.define(version: 20161109001919) do
 
   create_table "likes", force: :cascade do |t|
     t.integer  "counter"
@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(version: 20161108222355) do
     t.string   "background_content_type"
     t.integer  "background_file_size"
     t.datetime "background_updated_at"
+    t.string   "avatar"
+    t.string   "background"
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 

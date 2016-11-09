@@ -143,21 +143,21 @@
 <!--/.Navbar-->
 
 <!--Carousel Wrapper-->
-<div id="profiles-banner" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+<div id="profiles-banner" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false" style="background-image:url(<%=@profile.background%>);">
 
 </div>
 
 <div class="profile-image">
-  <%= image_tag('hwmp-david.jpg') %>
+  <%= image_tag(@profile.avatar) %>
 </div>
 <div class="profile-details clearfix"><h2><%= @profile.first_name %> <%=@profile.last_name%> </h2><p class="bio"><%= @profile.bio%> </p>
-<p>  <i class="fa fa-link" aria-hidden="true"></i><a class="left-bio" href="#">www.fullstackmiami.com</a><i class="fa fa-envelope" aria-hidden="true"></i><a class="right-bio" href="#">www.fullstackmiami.com</a>
+<p>  <i class="fa fa-link" aria-hidden="true"></i><a class="left-bio" href="<%=@profile.website%>"><%=@profile.website%></a><i class="fa fa-envelope" aria-hidden="true"></i><a class="right-bio" href="<%=@profile.email%>"><%=@profile.email%></a>
 </p>
 <a class="social-bio" href="https://www.instagram.com/<%=@profile.instagram%>"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
 <a class="social-bio" href="https://www.twitter.com/<%=@profile.twitter%>"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
 <a class="social-bio" href="https://www.linkedin.com/<%=@profile.instagram%>"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
 <div class="cta-btns profile-buttons">
-    <a href="/photos/new" class="btn btn-pink btn-lg flex-item">Upload Photo's</a>
+    <a href="/photos/new" class="btn btn-pink btn-lg flex-item">Upload Photos</a>
     <a href="/profiles/<%=@profile.id%>/edit" class="btn btn-pink btn-lg flex-item">Edit Profile</a>
 </div>
 

@@ -77,6 +77,6 @@ require 'profiles_controller'
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.require(:profile).permit(:first_name, :last_name, :website, :email, :bio, :instagram, :twitter, :user_id)
+      params.require(:profile).permit(:first_name, :last_name, :website, :email, :bio, :instagram, :twitter, :user_id, :background, :avatar)
     end
 end
