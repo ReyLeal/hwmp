@@ -87,7 +87,7 @@
           <ul class="animated fadeInUp col-md-12">
             <% if user_signed_in? %>
             <li>
-              <h1 class="h1-responsive flex-item">Welcome back <%= current_user.profile.first_name%></h1>
+              <h1 class="h1-responsive flex-item">Welcome Back <%= current_user.profile.first_name.capitalize%></h1>
               <li>
                 <p class="flex-item">What would you like to do?</p>
               </li>
