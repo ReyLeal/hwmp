@@ -85,6 +85,19 @@
       <div class="view hm-black-light">
         <div class="full-bg-img flex-center">
           <ul class="animated fadeInUp col-md-12">
+            <% if user_signed_in? %>
+            <li>
+              <h1 class="h1-responsive flex-item">Welcome back <%= current_user.profile.first_name%></h1>
+              <li>
+                <p class="flex-item">What would you like to do?</p>
+              </li>
+              <li>
+                <a  href="/profiles/<%=current_user.profile.id%>" class="btn btn-pink btn-lg flex-item">View Profile</a>
+              </li>
+              <li>
+                <a  href="/photos" class="btn btn-blue btn-lg flex-item">Browse Photos</a>
+              </li>
+            <% else %>
             <li>
               <h1 class="h1-responsive flex-item">Download Free Stock Photos</h1>
               <li>
@@ -96,6 +109,7 @@
               <li>
                 <a  href="/photos" class="btn btn-blue btn-lg flex-item">Browse Photos</a>
               </li>
+              <% end %>
             </ul>
           </div>
         </div>
@@ -130,14 +144,26 @@
           <div class="view hm-black-light">
             <div class="full-bg-img flex-center">
               <ul class="animated fadeInUp col-md-12">
+                <% if user_signed_in? %>
                 <li>
-                  <h1 class="h1-responsive flex-item">Sign up today and start posting!</h1>
+                  <h1 class="h1-responsive flex-item">View your profile now!</h1>
                   <li>
-                    <p class="flex-item">It's Quick and easy!</p>
+                    <p class="flex-item">Make changes or upload your photos!</p>
+                  </li>
+                  <li>
+                    <a  href="/profiles/<%=current_user.profile.id%>" class="btn btn-pink btn-lg flex-item">View Profile</a>
+                  </li>
+                <% else %>
+                <li>
+                  <h1 class="h1-responsive flex-item">View your profile now!</h1>
+                  <li>
+                    <p class="flex-item">Make changes or upload your photos!</p>
                   </li>
                   <li>
                     <a  href="/users/sign_up" class="btn btn-pink btn-lg flex-item">Sign up!</a>
                   </li>
+                  <% end %>
+                <li>
                 </ul>
               </div>
             </div>
