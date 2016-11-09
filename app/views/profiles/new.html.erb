@@ -1,6 +1,8 @@
-<!-- <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+<!-- <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar"-->
 
   <!-- Collapse button-->
+  <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
     <i class="fa fa-bars"></i>
   </button>
@@ -24,11 +26,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/about/">About</a>
         </li>
-        <%if user_signed_in? %>
-        <li class="nav-item active">
-          <a class="nav-link" href="/profiles/<%= current_user.id%>">Profile</a>
-        </li>
-        <% end %>
+  
       </ul>
 
 
@@ -86,7 +84,7 @@
 </div>
 <!-- Lightbox Gallery -->
 
-<!--Footer-->
+
 <% if user_signed_in? %>
 <footer class="page-footer center-on-small-only">
 
@@ -99,9 +97,6 @@
         </span><br>
         <a href="/about">This project is an open invitation to all photographers in Miami!</a>
       </p>
-      <div class="cta-btns">
-        <a  href="/photos/new" class="btn btn-pink btn-lg flex-item">Add A Photo</a>
-      </div>
     </div>
   </div>
   <% else %>
@@ -146,4 +141,3 @@
     <!--/.Copyright-->
 
   </footer>
-  <!--/.Footer--> -->
