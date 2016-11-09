@@ -22,6 +22,7 @@
   </div>
 
   <div class="profile-new-avatar">
+    <%= image_tag @profile.avatar.url(:medium) %>
     <%= f.label :avatar %><br/>
     <%= f.file_field :avatar %>
   </div>
@@ -53,6 +54,7 @@
 
 
 <div class="profile-new-background">
+  <%= image_tag @profile.background.url(:med) %>
   <%= f.label :background %><br/>
   <%= f.file_field :background %>
 </div>

@@ -449,3 +449,19 @@ label {
   margin-top:1em;
   color:#20c1e6;
 }
+
+
+#photo-new img {
+  margin:0 auto;
+  display:block;
+}
+
+.profile-new-background img {
+  width:100%;
+}
+
+.profile-new-avatar img {
+  max-width:100px;
+  border-radius:100%;
+  border:3px solid #18bfe5;
+}
